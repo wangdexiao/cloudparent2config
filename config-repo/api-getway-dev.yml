@@ -17,7 +17,7 @@ zuul:
       serviceId: config-server
 ribbon:
   ConnectTimeout: 15000 # 连接超时时间(ms)
-  ReadTimeout: 15000 # 通信超时时间(ms)
+  ReadTimeout: 60000 # 通信超时时间(ms)
 hystrix:
   command:
     default:
