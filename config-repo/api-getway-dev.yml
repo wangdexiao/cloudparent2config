@@ -9,6 +9,6 @@ zuul:
     api-feign-consumer:
       path: /feign-consumer/**
       serviceId: feign-consumer
-    api-feign-consumer:
+    api-config-consumer:
       path: /config/**
       serviceId: config-server
