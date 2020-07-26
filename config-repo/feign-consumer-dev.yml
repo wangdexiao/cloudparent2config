@@ -1,1 +1,12 @@
 testnumber: 77
+spring:
+  rabbitmq:
+    host: 139.9.139.63
+    port: 5672
+    username: guest
+    password: guest
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
