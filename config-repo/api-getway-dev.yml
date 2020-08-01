@@ -16,8 +16,8 @@ zuul:
       path: /config/**
       serviceId: config-server
     api-content-manage:
-          path: /content-manage/**
-          serviceId: content-public-manage
+        path: /content-manage/**
+        serviceId: content-public-manage
 ribbon:
   ConnectTimeout: 15000 # 连接超时时间(ms)
   ReadTimeout: 60000 # 通信超时时间(ms)
