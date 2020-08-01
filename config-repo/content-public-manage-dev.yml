@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/content-manage?user=wadexi&amp;password=wadexi&amp;useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true
+    username: wadexi
+    password: wadexi
