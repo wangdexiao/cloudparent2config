@@ -28,3 +28,9 @@ hystrix:
     isolation:
     thread:
     timeoutInMilliseconds: 60000 # 设置hystrix的超时时间为6000ms
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100Mb
+      max-request-size: 100Mb
