@@ -4,3 +4,11 @@ spring:
     url: jdbc:mysql://localhost:3306/content-manage?user=wadexi&amp;password=wadexi&amp;useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true
     username: wadexi
     password: wadexi
+
+web:
+  upload-path: D:/
+spring:
+  mvc:
+    static-path-pattern: /**
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,file:${web.upload-path}
