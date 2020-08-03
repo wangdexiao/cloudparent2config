@@ -4,3 +4,22 @@ spring:
     url: jdbc:mysql://localhost:3306/content-manage?user=wadexi&amp;password=wadexi&amp;useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true
     username: wadexi
     password: wadexi
+    type: com.alibaba.druid.pool.DruidDataSource
+    #数据源其他配置，在DruidConfig配置类中手动绑定
+    initialSize: 8
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: select 1 from dual
+mybatis-plus:
+    global-config:
+        db-config:
+            id-type: auto
+            logic-delete-field: del
+            logic-delete-value: 1
+            logic-not-delete-value: 0
+mybatis:
+    mapper-locations: classpath:mapper/*.xml
+    type-aliases-package: com.sso.authserver.entity
