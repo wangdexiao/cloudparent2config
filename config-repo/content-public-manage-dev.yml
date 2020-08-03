@@ -16,3 +16,16 @@ spring:
 
 web:
   upload-path: D:/
+security:
+    oauth2:
+        client:
+            client-id: sharecesuo
+            client-secret: 123456
+            access-token-uri: http://localhost:8000/oauth/token
+            user-authorization-uri: http://127.0.0.1:8000/oauth/authorize
+            token-name: access_token
+            authentication-scheme: query
+            client-authentication-scheme: form
+            pre-established-redirect-uri: http://127.0.0.1:8000/login
+        resource:
+            token-info-uri: http://127.0.0.1:8000/oauth/check_token
