@@ -21,11 +21,11 @@ security:
         client:
             client-id: sharecesuo
             client-secret: 123456
-            access-token-uri: http://localhost:8000/oauth/token
-            user-authorization-uri: http://127.0.0.1:8000/oauth/authorize
+            access-token-uri: http://192.168.1.100:8000/oauth/token
+            user-authorization-uri: http://192.168.1.100:8000/oauth/authorize
             token-name: access_token
             authentication-scheme: query
             client-authentication-scheme: form
-            pre-established-redirect-uri: http://127.0.0.1:8000/login
+            pre-established-redirect-uri: http://192.168.1.100:8000/login
         resource:
-            token-info-uri: http://127.0.0.1:8000/oauth/check_token
+            token-info-uri: http://192.168.1.100:8000/oauth/check_token
