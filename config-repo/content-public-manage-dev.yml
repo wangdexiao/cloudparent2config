@@ -21,16 +21,16 @@ security:
         client:
             client-id: sharecesuo
             client-secret: 123456
-            access-token-uri: http://192.168.1.100:5555/sso-server/oauth/token #令牌断点
-            user-authorization-uri: http://192.168.1.100:5555/sso-server/oauth/authorize #授权端点
+            access-token-uri: http://192.168.1.100:8000/oauth/token #令牌断点
+            user-authorization-uri: http://192.168.1.100:8000/oauth/authorize #授权端点
 #            token-name: access_token
 #            authentication-scheme: query
 #            client-authentication-scheme: form
-            registered-redirect-uri: http://192.168.1.100:5555/sso-server/login
+            registered-redirect-uri: http://192.168.1.100:8000/login
         resource:
 #            token-info-uri: http://192.168.1.100/oauth/check_token
             jwt:
-                key-uri: http://192.168.1.100:8000/5555/sso-server/token_key
+                key-uri: http://192.168.1.100:8000/oauth/token_key
 server:
     servlet:
         session:
