@@ -21,12 +21,11 @@ security:
         client:
             client-id: sharecesuo
             client-secret: 123456
+            registered-redirect-uri: http://192.168.1.100:8000/login
             access-token-uri: http://192.168.1.100:8000/oauth/token #令牌断点
-            user-authorization-uri: http://192.168.1.100:8000/oauth/authorize #授权端点
 #            token-name: access_token
 #            authentication-scheme: query
 #            client-authentication-scheme: form
-            registered-redirect-uri: http://192.168.1.100:8000/login
         resource:
 #            token-info-uri: http://192.168.1.100/oauth/check_token
             jwt:
