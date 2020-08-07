@@ -1,4 +1,8 @@
 zuul:
+  #默认Zuul认为请求头中 "Cookie", "Set-Cookie", "Authorization" 是敏感信息，它不会转发
+   #请求，因为把它设置为空，就会转发了
+  sensitive-headers: null
+  add-host-header: true #正确的处理重定向操作
   host:
     connect-timeout-millis: 15000 #HTTP连接超时要比Hystrix的大
     socket-timeout-millis: 60000   #socket超时
