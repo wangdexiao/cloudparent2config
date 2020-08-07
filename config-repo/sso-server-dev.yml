@@ -34,4 +34,6 @@ management:
             exposure:
                 include: "*"
 logging:
-  level: debug
+  level:
+    root: warn
+    org.springframework.security.oauth2: debug
