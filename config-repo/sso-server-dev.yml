@@ -35,5 +35,5 @@ management:
                 include: "*"
 logging:
   level:
-    root: warn
+    root: debug
     org.springframework.security.oauth2: debug
