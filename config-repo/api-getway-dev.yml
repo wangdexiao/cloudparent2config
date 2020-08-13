@@ -21,7 +21,7 @@ zuul:
       serviceId: config-server
     api-content-manage:
         path: /content-manage/**
-        serviceId: content-public-manage
+        serviceId: content-manage
     api-sso-server:
       path: /sso-server
       serviceId: sso-server
