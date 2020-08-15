@@ -25,12 +25,7 @@ management:
 logging:
   level:
     org.springframework.security: debug
-sso:
-  client-id: sharecesuo
-  client-secret: 123456
-  redirect-uri: http://192.168.1.100:8099/login
-  access-token-uri: http://192.168.1.100:8000/oauth/token
-  user-info-uri: http://192.168.1.100:8002/userInfo
+
 #security:
 #    oauth2:
 #        client:
