@@ -46,3 +46,6 @@ sso:
   client-secret: 123456
   access-token-uri: http://192.168.1.100:8000/oauth/token
   user-info-uri: http://192.168.1.100:8002/userInfo
+logging:
+  level:
+    org.springframework.security: debug
