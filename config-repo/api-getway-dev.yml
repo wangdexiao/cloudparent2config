@@ -4,8 +4,8 @@ zuul:
   sensitive-headers: null
   add-host-header: true #正确的处理重定向操作
   host:
-    connect-timeout-millis: 1500000000 #HTTP连接超时要比Hystrix的大
-    socket-timeout-millis: 6000000000   #socket超时
+    connect-timeout-millis: 15000000 #HTTP连接超时要比Hystrix的大
+    socket-timeout-millis: 3600000   #socket超时
   routes:
     api-hello-service:
       path: /hello-service/**
@@ -26,15 +26,15 @@ zuul:
       path: /sso-server
       serviceId: sso-server
 ribbon:
-  ConnectTimeout: 15000000 # 连接超时时间(ms)
-  ReadTimeout: 6000000 # 通信超时时间(ms)
+  ConnectTimeout: 1500000 # 连接超时时间(ms)
+  ReadTimeout: 600000 # 通信超时时间(ms)
 hystrix:
   command:
     default:
     execution:
     isolation:
     thread:
-    timeoutInMilliseconds: 60000000 # 设置hystrix的超时时间为6000ms
+    timeoutInMilliseconds: 600000 # 设置hystrix的超时时间为6000ms
 spring:
   servlet:
     multipart:
