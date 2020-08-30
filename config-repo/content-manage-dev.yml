@@ -29,12 +29,12 @@ logging:
 security:
     oauth2:
         client:
-            client-id: sharecesuo
+            client-id: sharecesuo2
             client-secret: 123456
             user-authorization-uri: http://192.168.1.100:8000/oauth/authorize #授权码端点
             access-token-uri: http://192.168.1.100:8000/oauth/token #令牌断点
             use-current-uri: false
-            registered-redirect-uri: http://192.168.1.100:10001/login
+            registered-redirect-uri: http://192.168.1.100:10003/login
 #            pre-established-redirect-uri: http://192.168.1.100:10001/login
 #            token-name: access_token
 #            authentication-scheme: query
