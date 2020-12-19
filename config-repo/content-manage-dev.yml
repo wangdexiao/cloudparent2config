@@ -3,7 +3,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://139.9.139.63:3306/content-manage?user=root&amp;password=Wdx123123123.&amp;useUnicode=true&amp;characterEncoding=utf8&amp;autoReconnect=true
     username: root
-    password: Wdx123123123.
+    password: root
   mvc:
     static-path-pattern: /**
   resources:
