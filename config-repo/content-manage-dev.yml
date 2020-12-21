@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.1.100:3306/content-manage?user=root&amp;password=root&amp;useUnicode=true&amp;characterEncoding=utf8mb4&amp;autoReconnect=true
+    url: jdbc:mysql://10.10.10.134:3306/content-manage?user=root&amp;password=root&amp;useUnicode=true&amp;characterEncoding=utf8mb4&amp;autoReconnect=true
     username: root
     password: root
   mvc:
@@ -31,19 +31,19 @@ security:
         client:
             client-id: sharecesuo
             client-secret: 123456
-            user-authorization-uri: http://192.168.1.100:8000/oauth/authorize #授权码端点
-            access-token-uri: http://192.168.1.100:8000/oauth/token #令牌断点
+            user-authorization-uri: http://10.10.10.134:8000/oauth/authorize #授权码端点
+            access-token-uri: http://10.10.10.134:8000/oauth/token #令牌断点
             use-current-uri: false
-            registered-redirect-uri: http://192.168.1.100:10001/login
-#            pre-established-redirect-uri: http://192.168.1.100:10001/login
+            registered-redirect-uri: http://10.10.10.134:10001/login
+#            pre-established-redirect-uri: http://10.10.10.134:10001/login
 #            token-name: access_token
 #            authentication-scheme: query
 #            client-authentication-scheme: form
         resource:
-#            token-info-uri: http://192.168.1.100/oauth/check_token
+#            token-info-uri: http://10.10.10.134/oauth/check_token
             jwt:
-                key-uri: http://192.168.1.100:8000/oauth/token_key
-#            user-info-uri: http://192.168.1.100:8000/userInfo
+                key-uri: http://10.10.10.134:8000/oauth/token_key
+#            user-info-uri: http://10.10.10.134:8000/userInfo
 #        sso:
 #          login-path: /login
 

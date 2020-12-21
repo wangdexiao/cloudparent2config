@@ -44,8 +44,8 @@ spring:
 sso:
   client-id: sharecesuo
   client-secret: 123456
-  access-token-uri: http://192.168.1.100:8000/oauth/token
-  user-info-uri: http://192.168.1.100:8002/userInfo
+  access-token-uri: http://10.10.10.134:8000/oauth/token
+  user-info-uri: http://10.10.10.134:8002/userInfo
 logging:
   level:
     org.springframework.security: debug
