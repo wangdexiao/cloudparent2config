@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://10.10.10.134:3306/content-manage?user=root&amp;password=root&amp;useUnicode=true&amp;characterEncoding=utf8mb4&amp;autoReconnect=true
+    url: jdbc:mysql://127.0.0.1:3306/content-manage?user=root&amp;password=Wdx123123123.&amp;useUnicode=true&amp;characterEncoding=utf8mb4&amp;autoReconnect=true
     username: root
-    password: root
+    password: Wdx123123123.
   mvc:
     static-path-pattern: /**
   resources:
